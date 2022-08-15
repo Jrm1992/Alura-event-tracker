@@ -7,7 +7,7 @@ import EventoCheckbox from './EventoCheckbox';
 const Evento: React.FC<{ evento: IEvento }> = ({ evento }) => {
 
   const excluirEvento = useDeletarEvento()
-  
+
   const estilos = [
     style.Evento
   ]
@@ -18,7 +18,7 @@ const Evento: React.FC<{ evento: IEvento }> = ({ evento }) => {
 
   return (<div className={estilos.join(' ')}>
 
-    <EventoCheckbox evento={evento}/>
+    <EventoCheckbox evento={evento} />
     <div className="cards-info">
       <h3 className={style.descricao}>{evento.descricao} - {evento.inicio.toLocaleDateString()}</h3>
     </div>
